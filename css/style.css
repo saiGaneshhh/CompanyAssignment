@@ -150,7 +150,7 @@ textarea{
 
     text-decoration:none;
 
-    margin-top:22px;
+    margin-top:15px;
 
     transition:all .45s ease;
 
@@ -168,7 +168,7 @@ textarea{
 
 .navbar.scrolled .register-btn{
 
-    margin-top:12px;
+    /* margin-top:12px; */
 
     transform:scale(.92);
 
@@ -386,6 +386,7 @@ textarea{
 
     width:90px;
 }
+
 
 }
 
