@@ -55,47 +55,6 @@ textarea{
     --white:#ffffff;
 
 }
-/*=========================================
-        HAMBURGER MENU
-=========================================*/
-
-.hamburger{
-    display:none;
-    flex-direction:column;
-    background:transparent;
-    border:none;
-    cursor:pointer;
-    gap:6px;
-    z-index:9998;
-    position:relative;
-}
-
-.hamburger span{
-    width:28px;
-    height:3px;
-    background:#ffffff;
-    border-radius:2px;
-    transition:all .3s ease;
-    display:block;
-}
-
-.hamburger.active span:nth-child(1){
-    transform:rotate(45deg) translate(10px, 10px);
-}
-
-.hamburger.active span:nth-child(2){
-    opacity:0;
-}
-
-.hamburger.active span:nth-child(3){
-    transform:rotate(-45deg) translate(7px, -7px);
-}
-
-.navbar.scrolled .hamburger span{
-    background:#ffffff;
-}
-
-
 
 
 .navbar{
@@ -357,23 +316,18 @@ textarea{
 
 .hamburger{
 
-    display:flex;
+    display:none;
 }
 
 .register-btn{
 
-    display:none;
-    position:absolute;
-    top:76px;
-    right:20px;
+    display:flex;
+    position:relative;
+    top:20;
+    right:0;
     flex-direction:row;
     margin:0;
-}
-
-.hamburger.active ~ .register-btn{
-
-    display:flex !important;
-    animation:slideDown .3s ease;
+    padding:0 16px;
 }
 
 .logo{
@@ -404,22 +358,18 @@ textarea{
 
 .hamburger{
 
-    display:flex;
+    display:none;
 }
 
 .register-btn{
 
-    display:none;
-    position:absolute;
-    top:76px;
-    right:20px;
+    display:flex;
+    position:relative;
+    top:20px;
+    right:0;
     flex-direction:row;
     margin:0;
-}
-
-.hamburger.active ~ .register-btn{
-
-    display:flex !important;
+    padding:0 0px;
 }
 
 .logo{
@@ -455,30 +405,18 @@ textarea{
 
 .hamburger{
 
-    display:flex;
-}
-
-.hamburger span{
-
-    width:24px;
-
-    height:2.5px;
+    display:none;
 }
 
 .register-btn{
 
-    display:none;
-    position:absolute;
-    top:70px;
-    right:10px;
+    display:flex;
+    position:relative;
+    top:20;
+    right:0;
     flex-direction:row;
     margin:0;
-    padding:0 10px;
-}
-
-.hamburger.active ~ .register-btn{
-
-    display:flex !important;
+    padding:0 0px;
 }
 
 .register-btn .arrow-box{

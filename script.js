@@ -9,17 +9,6 @@ handleScroll();
 
 
 /*=========================================
-      HAMBURGER MENU
-=========================================*/
-
-const hamburger = document.getElementById('hamburger');
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-});
-
-
-/*=========================================
       SECTION 2 - DRAG SLIDER
 =========================================*/
 
