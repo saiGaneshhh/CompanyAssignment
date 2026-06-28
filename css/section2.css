@@ -1,0 +1,468 @@
+/*==========================================
+            SECTION 2
+==========================================*/
+
+.section2{
+
+    width:100%;
+
+    background:#ffffff;
+padding-top:90px ;
+    /* padding:90px 0 100px; */
+}
+
+
+/*==========================================
+            STATS
+==========================================*/
+
+.stats-wrapper{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    /* gap:40px; */
+
+    margin-bottom:90px;
+}
+
+
+.stat-box{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+
+.stat-box img{
+
+    width:240px;
+
+    opacity:.22;
+}
+
+
+.stat-content{
+
+    position:absolute;
+
+    text-align:center;
+}
+
+
+.stat-content h2{
+
+    color:#14295D;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+}
+
+
+.stat-content p{
+
+    color:#162B6D;
+
+    font-size:22px;
+
+    line-height:1.4;
+}
+
+
+
+/*==========================================
+        SECTION TITLE
+==========================================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+}
+
+
+.section-title h2{
+
+    font-size:50px;
+
+    color:#22175C;
+
+    font-weight:700;
+}
+
+
+/*==========================================
+        SCHOOL SLIDER
+==========================================*/
+
+.school-slider{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    cursor:grab;
+
+    user-select:none;
+
+    scroll-behavior:smooth;
+
+    -webkit-overflow-scrolling:touch;
+
+    scrollbar-width:none;
+}
+
+.school-slider::-webkit-scrollbar{
+
+    display:none;
+}
+
+.school-slider.dragging{
+
+    cursor:grabbing;
+
+    scroll-behavior:auto;
+}
+
+
+
+/*==========================================
+        TRACK
+==========================================*/
+
+.school-track{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:24px;
+
+    width:max-content;
+
+    padding:10px 0;
+}
+
+
+
+/*==========================================
+        CARD
+==========================================*/
+
+.school-card{
+
+    width:220px;
+
+    height:120px;
+
+    flex:0 0 auto;
+
+    background:#fff;
+
+    border:1px solid #E8E8E8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:6px;
+
+    transition:.35s;
+
+    cursor:pointer;
+}
+
+.school-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.school-card img{
+
+    width:150px;
+
+    object-fit:contain;
+
+    pointer-events:none;
+}
+
+/*==========================================
+        RESPONSIVE - 1200px
+==========================================*/
+
+@media (max-width:1200px){
+
+
+
+.stats-wrapper{
+
+    width:95%;
+
+    gap:20px;
+}
+
+.stat-box img{
+
+    width:190px;
+}
+
+.stat-content h2{
+
+    font-size:34px;
+}
+
+.stat-content p{
+
+    font-size:18px;
+}
+
+.section-title h2{
+
+    font-size:42px;
+}
+
+.school-card{
+
+    width:190px;
+
+    height:110px;
+}
+
+.school-card img{
+
+    width:130px;
+}
+
+}
+
+
+/*==========================================
+        RESPONSIVE - 992px
+==========================================*/
+
+@media (max-width:992px){
+
+.stats-wrapper{
+
+    grid-template-columns:repeat(2,1fr);
+
+    row-gap:40px;
+}
+
+.section-title{
+
+    margin-bottom:45px;
+}
+
+.section-title h2{
+
+    font-size:36px;
+}
+
+.school-track{
+
+    gap:18px;
+
+    padding:10px 20px;
+}
+
+.school-card{
+
+    width:180px;
+
+    height:100px;
+}
+
+.school-card img{
+
+    width:120px;
+}
+
+}
+
+
+/*==========================================
+        RESPONSIVE - 768px
+==========================================*/
+
+@media (max-width:768px){
+
+/* .section2{
+
+    padding:60px 0;
+} */
+
+.stats-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+    margin-bottom:60px;
+}
+
+.stat-box img{
+
+    width:180px;
+}
+
+.stat-content h2{
+
+    font-size:32px;
+}
+
+.stat-content p{
+
+    font-size:17px;
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+    line-height:1.3;
+}
+
+.school-track{
+
+    gap:16px;
+
+    padding:10px 15px;
+}
+
+.school-card{
+
+    width:170px;
+
+    height:95px;
+}
+
+.school-card img{
+
+    width:110px;
+}
+
+}
+
+
+/*==========================================
+        RESPONSIVE - 576px
+==========================================*/
+
+@media (max-width:576px){
+/* 
+.section2{
+
+    padding:50px 0;
+} */
+
+.section-title{
+
+    margin-bottom:35px;
+}
+
+.section-title h2{
+
+    font-size:26px;
+}
+
+.school-track{
+
+    gap:14px;
+
+    padding:10px;
+}
+
+.school-card{
+
+    width:150px;
+
+    height:85px;
+
+    border-radius:5px;
+}
+
+.school-card img{
+
+    width:95px;
+}
+
+.stat-box img{
+
+    width:150px;
+}
+
+.stat-content h2{
+
+    font-size:28px;
+}
+
+.stat-content p{
+
+    font-size:15px;
+}
+
+}
+
+
+/*==========================================
+        RESPONSIVE - 420px
+==========================================*/
+
+@media (max-width:420px){
+
+.section-title h2{
+
+    font-size:22px;
+}
+
+.school-card{
+
+    width:135px;
+
+    height:75px;
+}
+
+.school-card img{
+
+    width:80px;
+}
+
+.stat-box img{
+
+    width:130px;
+}
+
+.stat-content h2{
+
+    font-size:24px;
+}
+
+.stat-content p{
+
+    font-size:14px;
+}
+
+}

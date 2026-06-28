@@ -1,0 +1,278 @@
+/*==========================================
+            SECTION 4
+==========================================*/
+
+.appointment-section{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    min-height:650px;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        90deg,
+        #efdffc 50%,
+        #caa8f4 20%,
+        #cfb1ff 0%,
+        rgba(255,255,255,0) 60%
+    );
+}
+
+
+/*==========================================
+        LEFT CONTENT
+==========================================*/
+
+.appointment-content{
+
+    width:45%;
+
+    padding-left:90px;
+
+    z-index:2;
+}
+
+.subtitle{
+
+    display:block;
+
+    color:#7C49D5;
+
+    font-size:34px;
+
+    font-style:italic;
+
+    margin-bottom:20px;
+}
+
+.appointment-content h2{
+
+    color:#24145F;
+
+    font-size:72px;
+
+    line-height:1.15;
+
+    font-weight:500;
+
+    margin-bottom:25px;
+}
+
+.appointment-content p{
+
+    color:#7C49D5;
+
+    font-size:38px;
+
+    font-style:italic;
+
+    margin-bottom:45px;
+}
+
+
+/*==========================================
+            BUTTON
+==========================================*/
+
+.appointment-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    border:2px solid #1D275E;
+
+    overflow:hidden;
+
+    border-radius:4px;
+
+    text-decoration:none;
+}
+
+.btn-arrow{
+
+    width:56px;
+
+    height:52px;
+
+    background:linear-gradient(
+        180deg,
+        #42207D,
+        #1A154D
+    );
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+}
+
+.btn-text{
+
+    width:190px;
+
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#fff;
+
+    color:#1D275E;
+
+    font-size:15px;
+
+    font-weight:700;
+}
+
+.appointment-btn:hover{
+
+    transform:translateY(-2px);
+
+    transition:.3s;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+
+/*==========================================
+        RIGHT IMAGE
+==========================================*/
+
+.appointment-image{
+
+    width:55%;
+
+    height:650px;
+
+    position:relative;
+}
+
+.appointment-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}
+
+
+/* Left Fade */
+
+.appointment-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:45%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #EFDFFF 0%,
+        rgba(239,223,255,.9) 25%,
+        rgba(239,223,255,0) 100%
+    );
+}
+
+
+/*==========================================
+        RESPONSIVE
+==========================================*/
+
+@media(max-width:992px){
+
+.appointment-section{
+
+    flex-direction:column;
+
+}
+
+.appointment-content{
+
+    width:100%;
+
+    padding:70px 40px;
+
+}
+
+.appointment-image{
+
+    width:100%;
+
+    height:500px;
+}
+
+.appointment-content h2{
+
+    font-size:48px;
+}
+
+.subtitle{
+
+    font-size:24px;
+}
+
+.appointment-content p{
+
+    font-size:28px;
+}
+
+}
+
+
+@media(max-width:768px){
+
+.appointment-content{
+
+    padding:50px 25px;
+}
+
+.appointment-content h2{
+
+    font-size:38px;
+}
+
+.subtitle{
+
+    font-size:20px;
+}
+
+.appointment-content p{
+
+    font-size:22px;
+}
+
+.appointment-image{
+
+    height:350px;
+}
+
+.btn-text{
+
+    width:160px;
+
+    font-size:13px;
+}
+
+}

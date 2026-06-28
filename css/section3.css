@@ -1,0 +1,214 @@
+/*==========================================
+            SECTION 3
+==========================================*/
+
+.choose-school{
+
+    background:#ffffff;
+
+    padding:90px 0;
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+}
+
+
+
+/*==========================================
+            TITLE
+==========================================*/
+
+.choose-title{
+
+    text-align:center;
+
+    font-size:52px;
+
+    font-weight:700;
+
+    color:#24145F;
+
+    margin-bottom:65px;
+}
+
+
+
+/*==========================================
+            GRID
+==========================================*/
+
+.school-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+}
+
+
+
+/*==========================================
+            CARD
+==========================================*/
+
+.choose-card{
+
+    position:relative;
+
+    height:350px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    cursor:pointer;
+}
+
+.choose-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.choose-card:hover img{
+
+    transform:scale(1.08);
+}
+
+
+
+/*==========================================
+            OVERLAY
+==========================================*/
+
+.card-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.85),
+        rgba(0,0,0,.35),
+        rgba(0,0,0,0)
+    );
+}
+
+
+
+/*==========================================
+            CONTENT
+==========================================*/
+
+.card-content{
+
+    position:absolute;
+
+    left:22px;
+
+    right:22px;
+
+    bottom:22px;
+
+    color:#fff;
+
+    z-index:2;
+}
+
+.card-content h3{
+
+    font-size:28px;
+
+    font-weight:600;
+
+    line-height:1.3;
+
+    margin-bottom:14px;
+}
+
+.card-content p{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+    color:#ECECEC;
+}
+
+
+
+/*==========================================
+            HOVER
+==========================================*/
+
+.choose-card:hover{
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+
+
+/*==========================================
+            RESPONSIVE
+==========================================*/
+
+@media(max-width:1200px){
+
+.school-cards{
+
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:768px){
+
+.choose-school{
+
+    padding:70px 0;
+}
+
+.choose-title{
+
+    font-size:34px;
+
+    margin-bottom:40px;
+}
+
+.school-cards{
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+}
+
+.choose-card{
+
+    height:320px;
+}
+
+.card-content h3{
+
+    font-size:24px;
+}
+
+.card-content p{
+
+    font-size:16px;
+}
+
+}
